@@ -20,9 +20,11 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
 </head>
 
 <body>
+    <!-- main content -->
     <section class="content">
         <h1>Pokedex</h1>
 
@@ -37,10 +39,51 @@
         </div>
     </section>
 
+    <!-- the modal -->
+    <div id="myModal" class="modal">
+        <!-- modal content -->
+        <div class="grass" id="modal-content">
+            <!-- content top -->
+            <section class="topContent" id="topContent">
+                <div class="menuTopButtons">
+                    <span class="close">&larr;</span>
+                    <span class="like">&#9825;</span>
+                </div>
+                
+                <div id="contentTopToReplace">
+                    <div class="modalPokemon">
+                        <div class="nameAndTypes">
+                            <span class="name">Pokemon</span>
+                            <ol class="types">
+                                <li class="type grass">Type</li>
+                            </ol>
+                        </div>
+                        
+                        <span class="number">#00</span>
+                    </div>
+                    
+                    <img src="assets/img/whoIsThePokemon.png"alt="Pokemon">
+                </div>
+            </section><!-- end content top -->
+
+            <!-- content bottom -->
+            <div class="bottomContent">
+                <ul class="menuNavgation">
+                    <li class="list-group-item active">About</li>
+                </ul>
+
+                <ol id="gridInfoToReplace" class="gridInfo">
+                    
+                </ol>
+            </div><!-- end content bottom -->
+        </div>
+    </div>
+
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/modal.js"></script>
 </body>
 
 </html>
